@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            background-color: #0d0d0d; /* Darker, more "Matrix" feel */
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+        }
+
+        .card {
+            background: #1a1a1a;
+            width: 90%;
+            max-width: 500px;
+            border: 1px solid #333;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 255, 65, 0.1); /* Subtle green glow */
+            overflow: hidden;
+            text-align: center;
+            animation: fadeIn 2s ease-in;
+        }
+
+        .header-bar {
+            background: #00FF41; /* Matrix Green */
+            height: 4px;
+        }
+
+        .content {
+            padding: 50px 30px;
+        }
+
+        h1 {
+            color: #00FF41;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        .message {
+            color: #cccccc;
+            line-height: 1.6;
+            font-size: 15px;
+            margin-bottom: 40px;
+        }
+
+        .hint-text {
+            font-size: 10px;
+            color: #333; /* Nearly invisible against the background */
+            text-decoration: none;
+            transition: color 0.5s;
+        }
+
+        .hint-text:hover {
+            color: #00FF41; /* Reveals when hovered */
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .footer {
+            padding: 15px;
+            font-size: 11px;
+            color: #444;
+            border-top: 1px solid #222;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="header-bar"></div>
+        <div class="content">
+            <h1>SYSTEM.CELEBRATE()</h1>
+            
+            <div class="message">
+                To the one who navigates the complexity of our architecture with ease.<br><br>
+                May your personal uptime be 100% and your successes scale infinitely this year.
+                <br><br>
+                Happy Birthday, Boss.
+            </div>
+
+            <p class="hint-text">Inspect the source to find the room address...</p>
+        </div>
+        <div class="footer">
+            Build 2026.02.22_Final
+        </div>
+    </div>
+
+</body>
+</html>
